@@ -1,14 +1,14 @@
 package penilaian;
-
 public class Main {
-    public static void main(String[] args) {
-        NilaiAkhir na = new NilaiAkhir();
+    public static void main (String []args){
         
-        na.setNama("Muhammad Fadli Ajidhansyah");
-        na.setNpm("2110010505");
+        NilaiAkhir fadli = new NilaiAkhir("Fadli","2110010505",85,80,90);
         
-        System.out.println("Nama    : "+na.getNama());
-        System.out.println("Npm     : "+na.getNpm());
+        System.out.println("Nama        : "+ fadli.getNama());
+        System.out.println("NPM         : "+ fadli.getNpm());
+        System.out.println("Nilai Akhir : "+ fadli.hitungNilaiAkhir());
+        
+        
     }
     
 }
